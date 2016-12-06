@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="content">
+
+    </div>
+
+    <script>
+        $.ajax("/api/user/cjh14/activity/", {
+            type: 'POST',
+            async:false,
+            data:{a_id:1},
+            success: function (result) {
+                alert(result);
+            }
+        });
+
+    </script>
+
+</body>
+</html>
